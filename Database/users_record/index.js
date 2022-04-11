@@ -58,6 +58,7 @@ app.put('/users/:id', (req, res) => {
 });
 
 // Delete a user by id
+//added comment
 
 app.delete('/users/:id', (req, res)=> {
     const insertQuery = `delete from user_information where id=${req.params.id}`;
