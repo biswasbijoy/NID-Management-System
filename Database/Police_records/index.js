@@ -24,7 +24,7 @@ db.connect(function(err) {
 // Get all users
 
 app.get('/users', (req, res) => {
-    db.query('SELECT * FROM fake_citizenship', (err, result) => {
+    db.query('SELECT * FROM police_record', (err, result) => {
         if (err) {
             console.log(err.message);
         }
@@ -39,7 +39,7 @@ app.get('/users', (req, res) => {
 // Post a new user
 app.post('/users', (req, res) => {
     const user = req.body;
-    db.query('INSERT INTO fake_citizenship SET ?', user, (err, result) => {
+    db.query('INSERT INTO police_record SET ?', user, (err, result) => {
         if (err) {
             console.log(err.message);
         }
@@ -52,7 +52,7 @@ app.post('/users', (req, res) => {
 
 // Get a user by id
 app.get('/users/:id', (req, res) => {
-    db.query(`Select * from fake_citizenship where id=${req.params.id}`, (err, result) => {
+    db.query(`Select * from police_record where id=${req.params.id}`, (err, result) => {
         if (!err) {
             res.send(result);
         }
