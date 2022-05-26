@@ -1,8 +1,10 @@
 const mysql = require('mysql');
 const path  = require('path');
 const express = require("express");
+const bodyparser = require("body-parser");
 const app = express();
 const dotenv = require('dotenv');
+const { request } = require('http');
 
 dotenv.config({ path: './.env' });
 
@@ -16,6 +18,8 @@ const db = mysql.createConnection({
 const publicDirectory = path.join(__dirname, './public');
 
 app.use(express.static(publicDirectory));
+app.use(bodyparser.urlencoded({extended: false}));
+
 app.set('views', __dirname + '/view');
 
 app.set('view engine', 'hbs');
@@ -28,7 +32,15 @@ db.connect((err) => {
 });
 
 app.get("/", (req, res) => {
-    res.render("index");
+    res.render("signup");
+});
+
+app.post("/submit", (req, res) => {
+    console.log(req.body);
+    res.sendFile('signup', {
+        title: 'Data Saved',
+        message: 'Data Saved Successfully'
+    });
 });
 
 app.listen(3001, () => {
