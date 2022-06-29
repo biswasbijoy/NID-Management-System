@@ -4,13 +4,13 @@
     font-size: 3rem;
     position: absolute;
     right: 1rem;
-    color: #ffffff96;
+    color: black;
 }
 </style>
 <div class="containe-fluid">
     <div class="row mt-3 mb-3 pl-5 pr-5">
         <div class="col-md-4 offset-md-2">
-            <div class="card bg-info">
+            <div class="card bg-warning">
                 <div class="card-body text-white">
                     <span class="float-right summary_icon"><i class="fa fa-car"></i></span>
                     <h4><b>
@@ -42,7 +42,8 @@
 			<div class="col-lg-12">
     			<div class="card">
     				<div class="card-body">
-    				<?php echo "Welcome back ". $_SESSION['login_name']."!"  ?>
+    				
+                    <h3 style="color: black; text-align:center">Parking Slots Information</h1>
     					<hr>	
 
                         <div class="row">
@@ -50,14 +51,14 @@
                                 <table class="table table-bordered">
                                     <tr>
                                         <th class="text-center">Parking Area</th>
-                                        <th class="text-center">Available</th>
+                                        <th class="text-center" >Available</th>
                                     </tr>
                                     <?php
                                     $cat = $conn->query("SELECT * FROM category order by name asc");
                                     while($crow = $cat->fetch_assoc()):
                                     ?>
                                     <tr>
-                                        <th class="text-center" colspan="2"><?php echo $crow['name'] ?></th>
+                                        <th class="text-center" colspan="2" ><?php echo $crow['name'] ?></th>
                                     </tr>
                                     <?php 
                                   
