@@ -4,10 +4,9 @@
     font-size: 3rem;
     position: absolute;
     right: 1rem;
-    color: #ffffff96;
+    color: black;
 }
 </style>
-
 <div class="containe-fluid">
     <div class="row mt-3 mb-3 pl-5 pr-5">
         <div class="col-md-4 offset-md-2">
@@ -17,10 +16,13 @@
                     <h4><b>
                         <?php echo $conn->query("SELECT * FROM parked_list where status = 1")->num_rows; ?>
                     </b></h4>
+                    <br>
                     <p><b>Total Parked Vehicle</b></p>
+                    <br>
                 </div>
             </div>
         </div>
+        
         <div class="col-md-4">
             <div class="card bg-success">
                 <div class="card-body text-white">
@@ -29,6 +31,7 @@
                         <?php echo $conn->query("SELECT * FROM parked_list where status = 2")->num_rows; ?>
 
                     </b></h4>
+                    <br>
                     <p><b>Total Checked-Out Vehicle</b></p>
                 </div>
             </div>
@@ -39,7 +42,8 @@
 			<div class="col-lg-12">
     			<div class="card">
     				<div class="card-body">
-    				<?php echo "Welcome back ". $_SESSION['login_name']."!"  ?>
+    				
+                    <h3 style="color: black; text-align:center">Parking Slots Information</h1>
     					<hr>	
 
                         <div class="row">
@@ -47,14 +51,14 @@
                                 <table class="table table-bordered">
                                     <tr>
                                         <th class="text-center">Parking Area</th>
-                                        <th class="text-center">Available</th>
+                                        <th class="text-center" >Available</th>
                                     </tr>
                                     <?php
                                     $cat = $conn->query("SELECT * FROM category order by name asc");
                                     while($crow = $cat->fetch_assoc()):
                                     ?>
                                     <tr>
-                                        <th class="text-center" colspan="2"><?php echo $crow['name'] ?></th>
+                                        <th class="text-center" colspan="2" ><?php echo $crow['name'] ?></th>
                                     </tr>
                                     <?php 
                                   
