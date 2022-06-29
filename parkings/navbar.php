@@ -24,8 +24,9 @@
 			<?php endif; ?>
 		</div>
 		<br><br><br><br><br>
-		<div>
-			<h4 style="color:white; text-align:center">Show Ads</h1>
+		<div id = "girl">
+		<img src=".\assets\img\brgr (2).png" alt="brgr (2).png" style ="width: 235px; margin: 7px   ;  height: 300px;object-fit: cover; ">
+
 		</div>
 
 </nav>
