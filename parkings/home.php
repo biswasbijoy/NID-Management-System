@@ -7,20 +7,22 @@
     color: #ffffff96;
 }
 </style>
-
 <div class="containe-fluid">
     <div class="row mt-3 mb-3 pl-5 pr-5">
         <div class="col-md-4 offset-md-2">
-            <div class="card bg-warning">
+            <div class="card bg-info">
                 <div class="card-body text-white">
                     <span class="float-right summary_icon"><i class="fa fa-car"></i></span>
                     <h4><b>
                         <?php echo $conn->query("SELECT * FROM parked_list where status = 1")->num_rows; ?>
                     </b></h4>
+                    <br>
                     <p><b>Total Parked Vehicle</b></p>
+                    <br>
                 </div>
             </div>
         </div>
+        
         <div class="col-md-4">
             <div class="card bg-success">
                 <div class="card-body text-white">
@@ -29,6 +31,7 @@
                         <?php echo $conn->query("SELECT * FROM parked_list where status = 2")->num_rows; ?>
 
                     </b></h4>
+                    <br>
                     <p><b>Total Checked-Out Vehicle</b></p>
                 </div>
             </div>
