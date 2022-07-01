@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Vehicle Parking Management System</title>
+  <title>iPark</title>
  	
 
 <?php
@@ -19,7 +19,8 @@
 </head>
 <style>
 	body{
-        background-image: url("./assets/img/background.jpg");
+        background-image: url("./assets/img/bg_home.jpg");
+        background-size: cover;
   }
   .modal-dialog.large {
     width: 80% !important;

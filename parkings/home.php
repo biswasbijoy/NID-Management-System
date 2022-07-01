@@ -19,7 +19,6 @@
                     </b></h4>
                     <br>
                     <p><b>Vehicles in Charging</b></p>
-                    <br>
                 </div>
             </div>
         </div>
@@ -44,14 +43,14 @@
     			<div class="card">
     				<div class="card-body">
     				
-                    <h3 style="color: black; text-align:center">Parking Slots Information</h1>
+                    <h3 style="color: black; text-align:center">Charging Slots Info</h1>
     					<hr>	
 
                         <div class="row">
                             <div class="col-lg-8 offset-2">
                                 <table class="table table-bordered">
                                     <tr>
-                                        <th class="text-center">Parking Area</th>
+                                        <th class="text-center">Charging Area</th>
                                         <th class="text-center" >Available</th>
                                     </tr>
                                     <?php

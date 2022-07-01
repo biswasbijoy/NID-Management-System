@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Admin | Vehicle Parking Management System</title>
+  <title>iPark</title>
  	
 
 <?php include('./header.php'); ?>
@@ -68,7 +68,7 @@ div#login-right::before {
     left: 0;
     width: calc(100%);
     height: calc(100%);
-    background: #000000e0;
+    background: #121824;
 }
 
 </style>
@@ -78,20 +78,23 @@ div#login-right::before {
 
   <main id="main" class=" bg-dark">
   		<div id="login-left">
-  			<div class="logo"><span class="fa fa-car"></span></div>
+		  <img src = "./assets/img/background.jpg" class="login-left" style="width:100%; height: 100%">
   		</div>
+		  <!-- <div id="login-left">
+  			<div class="logo"><span class="fa fa-car"></span></div>
+  		</div> -->
 
   		<div id="login-right">
-  			<div class="card col-md-8">
+  			<div class="card col-md-8 bg-info">
   				<div class="card-body">
   						
   					<form id="login-form" >
   						<div class="form-group">
-  							<label for="username" class="control-label">Username</label>
+  							<label for="username" class="control-label" style="color:white">Username</label>
   							<input type="text" id="username" name="username" class="form-control">
   						</div>
   						<div class="form-group">
-  							<label for="password" class="control-label">Password</label>
+  							<label for="password" class="control-label" style="color:white">Password</label>
   							<input type="password" id="password" name="password" class="form-control">
   						</div>
   						<center><button class="btn-sm btn-block btn-wave col-md-4 btn-primary">Login</button></center>

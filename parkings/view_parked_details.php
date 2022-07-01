@@ -64,7 +64,7 @@ if(isset($c[1])){
 									<td class="text-right"><?php echo $calc ." (".(number_format($ocalc,2)).")" ?></td>
 								</tr>
 								<tr>
-									<th>Hourly Charging Rate</th>
+									<th>Hourly Charging Rate ($)</th>
 									<td class="text-right"><?php echo number_format($rate,2) ?></td>
 								</tr>
 								<tr>
