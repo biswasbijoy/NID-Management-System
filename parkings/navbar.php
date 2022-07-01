@@ -23,7 +23,6 @@
 				<a href="index.php?page=home" class="nav-item nav-home"><span class='icon-field'><i class="fa fa-home"></i></span> Home</a>
 			<?php endif; ?>
 		</div>
-		<br><br><br><br><br>
 		<div id = "girl">
 		<img src=".\assets\img\brgr (2).png" alt="brgr (2).png" style ="width: 235px; margin: 7px   ;  height: 300px;object-fit: cover; ">
 

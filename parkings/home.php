@@ -6,6 +6,7 @@
     right: 1rem;
     color: black;
 }
+
 </style>
 <div class="containe-fluid">
     <div class="row mt-3 mb-3 pl-5 pr-5">

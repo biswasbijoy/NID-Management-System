@@ -1644,8 +1644,7 @@ main#view-panel{
   margin-left: 250px; 
   width:calc(100% - 250px);
   margin-top: 3.5rem;
-  padding: .5em;
-  background-color: brown;
+  padding: .5em
 }
 .toast{
   display: none;
@@ -1660,9 +1659,8 @@ main#view-panel{
     right: 0;
     top: 3.5rem;
 }
-main#main {
-    /*margin-top: 8rem;*/
-}
+/* main#main {
+    /*margin-top: 8rem;*/ */
 main#main.login {
     margin-top: unset;
 }

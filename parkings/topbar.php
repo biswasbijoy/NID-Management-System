@@ -16,7 +16,7 @@
   		
   		</div>
       <div class="col-md-4 float-left text-white">
-        <large><span class='icon-field'><i class="fa fa-video-camera" aria-hidden="true"></i></span><b> iParker</b></large>
+        <large><i class="fa fa-bolt"></i><b>  iPark</b></large>
       </div>
 	  	<div class="col-md-2 float-right text-white">
 	  		<a href="ajax.php?action=logout" class="text-white"><?php echo $_SESSION['login_name'] ?> <i class="fa fa-power-off"></i></a>

@@ -68,10 +68,10 @@
 	td p{
 		margin: unset
 	}
-	/* img{
-		max-width:100px;
-		max-height: 150px;
-	} */
+	img{
+		max-width:235px;
+		max-height: 300px;
+	}
 </style>
 <script>
 	$('#new_location').click(function(){
