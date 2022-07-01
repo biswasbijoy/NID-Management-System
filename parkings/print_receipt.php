@@ -12,14 +12,14 @@ $out_timstamp = $out_qry->num_rows > 0 ? date("M d, Y h:i A",strtotime($out_qry-
 
 ?>
 
-				<p><center><b><large>Parking Ticket</large></b></center></p>
+				<p><center><b><large>Charging Ticket</large></b></center></p>
 				<hr>
-				<h4><b>Parking Reference No. : <?php echo $ref_no ?></b> </h4>
-							<p>Vehicle Parked Area: <b><?php echo $lname ?></b></p>
-				<p>Vehicle Category: <b><?php echo $cname ?></b></p>
+				<h4><b>Charging ID: <?php echo $ref_no ?></b> </h4>
+							<p>Charging Station Name: <b><?php echo $lname ?></b></p>
+				<p>Model Name: <b><?php echo $cname ?></b></p>
 				<p>Vehicle Owner: <b><?php echo $owner ?></b></p>
-				<p>Vehicle Registranion No.: <b><?php echo $vehicle_registration ?></b></p>
+				<p>Vehicle Registration No.: <b><?php echo $vehicle_registration ?></b></p>
 				<p>Vehicle Brand: <b><?php echo $vehicle_brand ?></b></p>
 				<p>Vehicle Description: <b><?php echo !empty($vehicle_description) ? $vehicle_description : "No details entered" ?></b></p>
-				<p>Vehicle Parked-In Time Stamp: <b><?php echo $in_timstamp ?></b></p>
+				<p>Charging Starting Time: <b><?php echo $in_timstamp ?></b></p>
 			

@@ -26,18 +26,18 @@ if(isset($c[1])){
 			<div class="card-header">
 				<a href="index.php?page=manage_park&id=<?php echo $id ?>" class="btn btn-sm btn-primary btn-block col-sm-2 float-right" ><i class="fa fa-edit"></i> Edit</a>
 				<a href="javascript:void(0)" id="btn_print" class="btn btn-sm btn-primary btn-block col-sm-2 float-right mr-2 mt-0" ><i class="fa fa-print"></i> Print Ticket</a>
-				<h4><b>Parking Reference No. : <?php echo $ref_no ?></b> </h4>
+				<h4><b>Charging ID: <?php echo $ref_no ?></b> </h4>
 			</div>
 			<div class="card-body">
 				<div class="row">
 					<div class="col-md-6">
-						<p>Vehicle Parked Area: <b><?php echo $lname ?></b></p>
-						<p>Vehicle Category: <b><?php echo $cname ?></b></p>
+						<p>Charging Station Name: <b><?php echo $lname ?></b></p>
+						<p>Model Name: <b><?php echo $cname ?></b></p>
 						<p>Vehicle Owner: <b><?php echo $owner ?></b></p>
-						<p>Vehicle Registranion No.: <b><?php echo $vehicle_registration ?></b></p>
+						<p>Vehicle Registration No.: <b><?php echo $vehicle_registration ?></b></p>
 						<p>Vehicle Brand: <b><?php echo $vehicle_brand ?></b></p>
 						<p>Vehicle Description: <b><?php echo !empty($vehicle_description) ? $vehicle_description : "No details entered" ?></b></p>
-						<p>Vehicle Parked-In Time Stamp: <b><?php echo $in_timstamp ?></b></p>
+						<p>Charging Start Time: <b><?php echo $in_timstamp ?></b></p>
 					</div>
 					<div class="col-md-6">
 						<?php if($status == 1): ?>
@@ -52,19 +52,19 @@ if(isset($c[1])){
 									</th>
 								</tr>
 								<tr>
-									<th>Chech-In Timestamp</th>
+									<th>Charging Starting Time</th>
 									<td class="text-right"><?php echo $in_timstamp ?></td>
 								</tr>
 								<tr>
-									<th>Chech-Out Timestamp</th>
+									<th>Charging Ending Time</th>
 									<td class="text-right"><?php echo $out_timstamp ?></td>
 								</tr>
 								<tr>
-									<th>Timestamp Difference</th>
+									<th>Total Charging Time</th>
 									<td class="text-right"><?php echo $calc ." (".(number_format($ocalc,2)).")" ?></td>
 								</tr>
 								<tr>
-									<th>Vehicle Type Hourly Rate</th>
+									<th>Hourly Charging Rate</th>
 									<td class="text-right"><?php echo number_format($rate,2) ?></td>
 								</tr>
 								<tr>

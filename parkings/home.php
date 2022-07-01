@@ -18,7 +18,7 @@
                         <?php echo $conn->query("SELECT * FROM parked_list where status = 1")->num_rows; ?>
                     </b></h4>
                     <br>
-                    <p><b>Total Parked Vehicle</b></p>
+                    <p><b>Vehicles in Charging</b></p>
                     <br>
                 </div>
             </div>
@@ -33,7 +33,7 @@
 
                     </b></h4>
                     <br>
-                    <p><b>Total Checked-Out Vehicle</b></p>
+                    <p><b>Total Charged Vehicle</b></p>
                 </div>
             </div>
         </div>
