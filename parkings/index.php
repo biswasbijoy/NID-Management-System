@@ -19,8 +19,10 @@
 </head>
 <style>
 	body{
-        background: #abcdef;
+        background-image: url("./assets/img/background.jpg");
+        
   }
+  
   .modal-dialog.large {
     width: 80% !important;
     max-width: unset;
@@ -40,7 +42,7 @@
     top: 0;
 }
 #viewer_modal .modal-dialog {
-        width: 80%;
+    width: 80%;
     max-width: unset;
     height: calc(90%);
     max-height: unset;

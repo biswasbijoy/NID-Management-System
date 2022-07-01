@@ -10,7 +10,7 @@
 <div class="containe-fluid">
     <div class="row mt-3 mb-3 pl-5 pr-5">
         <div class="col-md-4 offset-md-2">
-            <div class="card bg-warning">
+            <div class="card bg-danger">
                 <div class="card-body text-white">
                     <span class="float-right summary_icon"><i class="fa fa-car"></i></span>
                     <h4><b>
@@ -24,7 +24,7 @@
         </div>
         
         <div class="col-md-4">
-            <div class="card bg-success">
+            <div class="card bg-primary">
                 <div class="card-body text-white">
                     <span class="float-right summary_icon"><i class="fa fa-car"></i></span>
                     <h4><b>
