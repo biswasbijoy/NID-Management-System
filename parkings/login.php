@@ -85,7 +85,7 @@ div#login-right::before {
   		</div> -->
 
   		<div id="login-right">
-  			<div class="card col-md-8 bg-info">
+  			<div class="card col-md-8  bg-dark " >
   				<div class="card-body">
   						
   					<form id="login-form" >
@@ -97,7 +97,7 @@ div#login-right::before {
   							<label for="password" class="control-label" style="color:white">Password</label>
   							<input type="password" id="password" name="password" class="form-control">
   						</div>
-  						<center><button class="btn-sm btn-block btn-wave col-md-4 btn-primary">Login</button></center>
+  						<center><button class="btn-sm btn-block btn-wave col-md-4 btn-info">Login</button></center>
   					</form>
   				</div>
   			</div>

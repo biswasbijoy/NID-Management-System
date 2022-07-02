@@ -3,7 +3,7 @@
 		text-indent:10px;
 	}
 </style>
-<nav id="sidebar" class='mx-lt-5 bg-primary' >
+<nav id="sidebar" class='mx-lt-5 bg-danger' >
 		
 		<div class="sidebar-list">
 				<?php if($_SESSION['login_type'] == 1): ?>
