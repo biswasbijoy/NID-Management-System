@@ -22,8 +22,8 @@ let weather = {
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
-        document.querySelector(".city").innerText =city;
-        document.querySelector(".temp").innerText = Math.ceil(temp) + "°C";
+        document.querySelector(".city").innerText =city + "    ";
+        document.querySelector(".temp").innerText = Math.ceil(temp) + "°C   ";
     },
 
 };

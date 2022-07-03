@@ -11,25 +11,47 @@
   }
 </style>
 
-<nav class="navbar navbar-light fixed-top bg-success" style="padding:0;min-height: 3.5rem">
+<nav class="navbar navbar-light fixed-top bg-success" >
   <div class="container-fluid mt-2 mb-2">
     <div class="col-lg-12">
       <div class="col-md-1 float-left" style="display: flex;">
 
       </div>
-      <div class="col-md-4 float-left text-white">
-        <h3><i class="fa fa-bolt"></i><b> iPark | Charge your Electric Car</b></h3>
+      <div class=" float-left text-white">
+        <h6><i class="fa fa-bolt"></i><b> iPark | Charge your Electric Car</b></h6>
       </div>
-      <div class="col-md-2 float-right text-white">
-        <a href="ajax.php?action=logout" class="text-white"><?php echo $_SESSION['login_name'] ?> <i class="fa fa-power-off"></i></a>
-
-        <div class="fl" style="font-size: 15px;">
-          <h2 class="city"style="font-size: 15px;">Sylhet</h2>
-          <h1 class="temp " style="font-size: 15px;">31°C</h1>
+      <div class=" float-right text-white" >
+        <a href="ajax.php?action=logout" class="text-white" ><?php echo $_SESSION['login_name'] ?> <i class="fa fa-power-off"></i></a>
 
 
-        </div>
       </div>
+      <div class="  float-right text-white" style="font-size: 15px;margin-top:10px">
+        
+      &nbsp
+      &nbsp
+
+      </div>
+      
+      <div class="fl  float-right text-white" style="font-size: 15px;">
+        <h2 class="city" style="font-size: 15px;">Sylhet</h2>
+        <!-- <h1 class="temp " style="font-size: 15px;">31°C</h1> -->
+
+
+      </div>
+      <div class="  float-right text-white" style="font-size: 15px;">
+        
+      &nbsp
+      &nbsp
+
+      </div>
+
+      <div class="fl  float-right text-white style=" font-size: 15px;  margin-left: 100px; ">
+        <!-- <h2 class="city" style="font-size: 15px;">Sylhet</h2> -->
+        <h1 class="temp " style="font-size: 15px;">31°C</h1>     
+
+
+      </div>
+      
     </div>
 
 </nav>
