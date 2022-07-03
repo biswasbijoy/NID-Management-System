@@ -20,8 +20,8 @@
       <div class=" float-left text-white">
         <h6><i class="fa fa-bolt"></i><b> iPark | Charge your Electric Car</b></h6>
       </div>
-      <div class=" float-right text-white" >
-        <a href="ajax.php?action=logout" class="text-white" ><?php echo $_SESSION['login_name'] ?> <i class="fa fa-power-off"></i></a>
+      <div class=" float-right text-white3">
+        <a href="ajax.php?action=logout" class="text-white"><?php echo $_SESSION['login_name'] ?> <i class="fa fa-power-off"></i></a>
 
 
       </div>
@@ -33,7 +33,7 @@
       </div>
       
       <div class="fl  float-right text-white" style="font-size: 15px;">
-        <h2 class="city" style="font-size: 15px;">Sylhet</h2>
+        <h2 class="city" style="font-size: 15px; margin-top: 3.3px; ">Sylhet</h2>
         <!-- <h1 class="temp " style="font-size: 15px;">31°C</h1> -->
 
 
@@ -45,7 +45,7 @@
 
       </div>
 
-      <div class="fl  float-right text-white style=" font-size: 15px;  margin-left: 100px; ">
+      <div class="fl  float-right text-white" style="font-size: 15px;  margin-top: 3.3px; ">
         <!-- <h2 class="city" style="font-size: 15px;">Sylhet</h2> -->
         <h1 class="temp " style="font-size: 15px;">31°C</h1>     
 
